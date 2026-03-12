@@ -6,6 +6,8 @@ export const CASES: CaseTemplate[] = [
     id: "ct-001",
     title: "Northstar Imports LLC",
     applicant: "Northstar Imports LLC",
+    programArea: "Watchlist screening",
+    typology: "Close-match sanctions alert",
     jurisdiction: "Delaware, US",
     storyline: "a beneficial owner is a close watchlist match and registry ownership is incomplete",
     reviewType: "Business onboarding",
@@ -45,6 +47,8 @@ export const CASES: CaseTemplate[] = [
     id: "ct-002",
     title: "Harborline Payments",
     applicant: "Harborline Payments",
+    programArea: "Origination",
+    typology: "Coordinated onboarding attack",
     jurisdiction: "New York, US",
     storyline: "a shared device cluster and bursty submissions point to mule-style coordination",
     reviewType: "Business onboarding",
@@ -84,6 +88,8 @@ export const CASES: CaseTemplate[] = [
     id: "ct-003",
     title: "Blue Cedar Advisory",
     applicant: "Blue Cedar Advisory",
+    programArea: "Onboarding remediation",
+    typology: "Recoverable identity friction",
     jurisdiction: "Texas, US",
     storyline: "the business is clean but identity confidence is weak and supporting documents are incomplete",
     reviewType: "Business onboarding",
@@ -119,6 +125,8 @@ export const CASES: CaseTemplate[] = [
     id: "ct-004",
     title: "Astra Freight",
     applicant: "Astra Freight",
+    programArea: "Business onboarding",
+    typology: "Clean approval",
     jurisdiction: "Florida, US",
     storyline: "all high-risk signals clear and the case is supported by stable documents and registry data",
     reviewType: "Business onboarding",
@@ -154,6 +162,8 @@ export const CASES: CaseTemplate[] = [
     id: "ct-005",
     title: "Mira Santos",
     applicant: "Mira Santos",
+    programArea: "Watchlist screening",
+    typology: "False-positive clearance",
     jurisdiction: "California, US",
     storyline: "a sanctions near-match is likely benign because the conflicting identifiers do not line up",
     reviewType: "Consumer onboarding",
@@ -189,6 +199,8 @@ export const CASES: CaseTemplate[] = [
     id: "ct-006",
     title: "Silverline Commerce",
     applicant: "Silverline Commerce",
+    programArea: "KYB / UBO review",
+    typology: "Ownership mismatch",
     jurisdiction: "Nevada, US",
     storyline: "a thin-file business uses a recycled email and incomplete ownership docs, making the case recoverable but not approvable yet",
     reviewType: "Business onboarding",
@@ -231,28 +243,28 @@ export const EVALUATIONS = CASES.map((caseItem) => ({
 
 export const VALIDATION_SIGNALS: ValidationSignal[] = [
   {
-    title: "Golden case coverage",
+    title: "Actionability coverage",
     status: "pass",
     metric: "6 / 6 scenarios match expected action",
-    note: "Seed cases cover approval, escalation, request-docs, and false-positive clearance."
+    note: "The research pack covers escalation, request-docs, approval, and false-positive clearance."
   },
   {
-    title: "Rule determinism",
+    title: "Policy replay",
     status: "pass",
     metric: "100% stable replay",
-    note: "The rule engine produces the same recommendation for the same fact pattern every run."
+    note: "The symbolic layer reproduces the same output for the same customer profile and evidence set."
   },
   {
-    title: "Evidence citation discipline",
+    title: "Evidence grounding",
     status: "pass",
     metric: "4 cited facts per recommendation",
-    note: "Each recommendation card is grounded in explicit source-tagged facts."
+    note: "Every recommendation packet points back to explicit source-tagged facts."
   },
   {
-    title: "Counterfactual sanity",
+    title: "Counterfactual discipline",
     status: "watch",
     metric: "2 alternative outcomes per case",
-    note: "Counterfactuals are intentionally bounded to auditable changes, not free-form generation."
+    note: "Counterfactuals stay bounded to auditable changes like watchlist clearance, document verification, or registry confirmation."
   }
 ];
 

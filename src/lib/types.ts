@@ -40,6 +40,8 @@ export type CaseTemplate = {
   id: string;
   title: string;
   applicant: string;
+  programArea: string;
+  typology: string;
   jurisdiction: string;
   storyline: string;
   reviewType: string;
