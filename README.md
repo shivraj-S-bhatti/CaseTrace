@@ -2,6 +2,8 @@
 
 CaseTrace is a visual fraud/compliance review workspace for turning messy onboarding cases into evidence-backed recommendations, rule traces, counterfactuals, and audit-ready packets.
 
+If you want the practical walkthrough for what to click and how to present it, start with [docs/demo-guide.md](/Users/apple/Projects/CaseTrace/docs/demo-guide.md).
+
 ## What is in this first build
 
 - Synthetic queue of onboarding and watchlist-review cases
