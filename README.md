@@ -6,6 +6,8 @@ If you want the practical walkthrough for what to click and how to present it, s
 
 If you want the endgame sourcing plan for datasets, registries, and API candidates, use [docs/data-sources.md](/Users/apple/Projects/CaseTrace/docs/data-sources.md).
 
+If you want a full recording script for a longer walkthrough, use [docs/youtube-script-10min.md](/Users/apple/Projects/CaseTrace/docs/youtube-script-10min.md).
+
 ## What is in this first build
 
 - Synthetic queue of onboarding and watchlist-review cases
