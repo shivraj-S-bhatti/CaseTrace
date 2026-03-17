@@ -4,6 +4,8 @@ CaseTrace is a visual fraud/compliance review workspace for turning messy onboar
 
 If you want the practical walkthrough for what to click and how to present it, start with [docs/demo-guide.md](/Users/apple/Projects/CaseTrace/docs/demo-guide.md).
 
+If you want the endgame sourcing plan for datasets, registries, and API candidates, use [docs/data-sources.md](/Users/apple/Projects/CaseTrace/docs/data-sources.md).
+
 ## What is in this first build
 
 - Synthetic queue of onboarding and watchlist-review cases
